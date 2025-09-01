@@ -27,5 +27,7 @@
        dest: /home/admin-user
    - name : K8S Deployment
      command: kubectl apply -f DeploymentIntoK8sCluster.yml
+   - name : Delete any existing resources
+     command: kubectl delete all --all
    - name : LB Service
      command: kubectl apply -f LB-Service.yml
