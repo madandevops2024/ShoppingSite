@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    color: blue #Pod label which we have created under labels
+    app: shopping-app
   ports:
     - port: 80
       targetPort: 8080
