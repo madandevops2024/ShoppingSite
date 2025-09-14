@@ -16,11 +16,10 @@ spec:
       labels:
         app: shopping-app
         env: dev
-        color: blue
     spec:
       containers:
         - name: shopping-app-container
-          image: madandevops2024/amazonsite-release-25
+          image: madandevops2024/amazonsite-release-26
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
